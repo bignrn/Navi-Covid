@@ -8,11 +8,15 @@
  *
  * コメント参考：https://neet-rookie.hatenablog.com/entry/2019/09/09/142358
  */
+
 package com.e.navi_covid;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.Menu;
+import android.widget.TextView;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
@@ -62,6 +66,8 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
+
+        TextView item = findViewById(R.id.action_settings);
     }
 
     @Override
@@ -70,6 +76,20 @@ public class MainActivity extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
+
+    //追記箇所@MainActivity→Settings
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item){
+        switch(item.getItemId()){
+            case R.id.action_settings:
+                Intent intent = new Intent(getApplicationContext(), Settings.class);
+                startActivity(intent);
+                return true;
+            default: break;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+    //ここまで追記
 
     @Override
     public boolean onSupportNavigateUp() {
