@@ -4,8 +4,6 @@
  * @class       MainActivity//クラス名
  * @date        2021/5/27   //更新日
  *
- * テストコメント？？？？？
- *
  * コメント参考：https://neet-rookie.hatenablog.com/entry/2019/09/09/142358
  */
 
