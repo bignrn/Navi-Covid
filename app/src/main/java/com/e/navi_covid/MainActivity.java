@@ -1,4 +1,5 @@
 /**
+ * @FileName    MainAction //ファイル名
  * @FileName    MainActivity //ファイル名
  * @class       MainActivity//クラス名
  * @date        2021/5/27   //更新日
