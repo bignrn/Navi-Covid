@@ -11,4 +11,19 @@
     <string name="menu_home">Map</string>
     <string name="menu_gallery">MyFavorite</string>
     <string name="menu_slideshow">News</string>
+
+    <!--追記部分-->
+    <string name="textSize">16dp</string>
+    <string name="backGround">バックグラウンドでアプリを動かす</string>
+    <string name="sizeText">文字サイズ</string>
+    <string-array name="size">
+        <item>中</item>
+        <item>大</item>
+        <item>小</item>
+    </string-array>
+    <string name="colorText">配色の変更</string>
+    <integer name="max">255</integer>
+    <integer name="min">0</integer>
+    <string name="backColor">背景色です。</string>
+    <!--ここまで追記箇所-->
 </resources>
