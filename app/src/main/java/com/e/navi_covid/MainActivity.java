@@ -9,6 +9,7 @@
 
 package com.e.navi_covid;
 
+<<<<<<< HEAD
 
 import android.Manifest;
 import android.content.DialogInterface;
@@ -58,6 +59,10 @@ import java.util.Locale;
 
 import android.content.Intent;
 import android.os.Bundle;
+=======
+import android.content.Intent;
+import android.os.Bundle;
+>>>>>>> 82a91e09837ca1b6479b8dd212479d47b14d0e86
 import android.view.MenuItem;
 import android.view.View;
 import android.view.Menu;
