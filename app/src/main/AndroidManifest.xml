@@ -31,7 +31,7 @@
             android:value="AIzaSyARzW3-LFOqzA4LWxhM5dBhWuRcAxAMmuQ"/>
         <meta-data
             android:name="com.google.android.gms.vision"
-            android:value="@integer/google_play_services_version"/>
+            android:value="12451000"/>
 
 
 
