@@ -1,5 +1,7 @@
 plugins {
     id 'com.android.application'
+
+
 }
 
 android {
@@ -7,16 +9,22 @@ android {
     buildToolsVersion "30.0.3"
 
     defaultConfig {
-        applicationId "com.e.navi_covid"
+        applicationId "com.example.navits"
         minSdkVersion 23
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
 
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        applicationId"com.e.firebasecloud"
+        minSdkVersion 28
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
 
-        //LIbrary
-            multiDexEnablaed true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        //Library
+        multiDexEnabled true
+
     }
 
     buildTypes {
@@ -33,7 +41,7 @@ android {
 
 dependencies {
 //Git Lib
-    complie 'com.github.ar-android:DrawRouteMaps:1.0.0'
+    compile 'com.github.ar-android:DrawRouteMaps:1.0.0'
 
 ///Google API
     implementation 'com.google.code.gson:2.8.4'
@@ -46,6 +54,12 @@ dependencies {
     implementation 'com.android.support:multidex:1.0.3'
 
 
+//Firebase　UI
+    implementation 'com.firebaseui:firebase-ui-firestore:7.1.1'
+    implementation 'com.google.firebase:firebase-storage:20.0.0'
+    implementation 'com.google.firebase:firebase-auth:21.0.1'
+    implementation 'com.google.firebase:firebase-firestore:23.0.0'
+    implementation fileTree(dir: "libs", include: ["*.jar"])
 
 
 
