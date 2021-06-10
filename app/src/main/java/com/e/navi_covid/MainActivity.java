@@ -10,6 +10,9 @@
 package com.e.navi_covid;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 346d881e7a2bce126fa514baf57dcee1567f3c08
 
 import android.Manifest;
 import android.content.DialogInterface;
@@ -57,9 +60,12 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Locale;
 
+<<<<<<< HEAD
 import android.content.Intent;
 import android.os.Bundle;
 =======
+=======
+>>>>>>> 346d881e7a2bce126fa514baf57dcee1567f3c08
 import android.content.Intent;
 import android.os.Bundle;
 >>>>>>> 82a91e09837ca1b6479b8dd212479d47b14d0e86
