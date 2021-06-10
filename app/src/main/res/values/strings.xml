@@ -25,5 +25,6 @@
     <integer name="max">255</integer>
     <integer name="min">0</integer>
     <string name="backColor">背景色です。</string>
+    <string name="settings">Settings</string>
     <!--ここまで追記箇所-->
 </resources>

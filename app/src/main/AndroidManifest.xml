@@ -31,7 +31,7 @@
             android:value="AIzaSyARzW3-LFOqzA4LWxhM5dBhWuRcAxAMmuQ"/>
         <meta-data
             android:name="com.google.android.gms.vision"
-            android:value="@integer/google_play_services_version"/>
+            android:value="12451000"/>/
 
 
 
@@ -45,8 +45,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Settings"/>
-        <activity android:name=".Coloring"/>
+        <activity
+            android:name=".Settings"
+            android:label="@string/settings"/>
+        <activity
+            android:name=".Coloring"
+            android:label="@string/settings"/>
     </application>
 
 </manifest>
