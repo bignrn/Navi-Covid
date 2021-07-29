@@ -10,6 +10,8 @@
 package com.e.navi_covid;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.PorterDuff;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -42,12 +44,22 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         //フローティングアクションボタンの設定、マテリアルデザインコンポーネント
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
+        //現在地ボタンの実装と変色
+        FloatingActionButton now = findViewById(R.id.fab);
+        now.setColorFilter(Color.parseColor("#000000"), PorterDuff.Mode.SRC_IN);
+        //現在地ボタンのタップ時の処理の記述
+        now.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+            public void onClick(View v) { // ここにクリック時の処理を書く
+
+                // MyCalendar クラスを呼び出す Intent を生成
+                Intent intent = new Intent(MainActivity.this, Fav_reg.class);
+                // intent オブジェクトに、パラメータ month＝ｲﾝﾃﾞｯｸｽ値という KeyValue 情報を持たせる
+                intent.putExtra("x", "緯度");
+                intent.putExtra("y", "経度");
+                intent.putExtra("住所", "アドレス");
+                // Intent 呼び出しを実行する
+                startActivity(intent);
             }
         });
 
