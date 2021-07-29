@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.NaviCovid">
+        <activity android:name=".Fav_reg"></activity>
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
@@ -19,8 +20,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Settings"/>
-        <activity android:name=".Coloring"/>
+        <activity android:name=".Settings" />
+        <activity android:name=".Coloring" />
     </application>
 
 </manifest>
